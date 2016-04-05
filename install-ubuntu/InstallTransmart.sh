@@ -355,7 +355,7 @@ if ! [ -e transmart.war ]; then
 	curl https://s3.amazonaws.com/kabs-files/transmart.war --output transmart.war
 fi
 if ! [ -e gwava.war ]; then
-	curl http://75.124.74.64/wars/gwava.V1.2.5-Beta.war --output gwava.war
+	curl https://s3.amazonaws.com/kabs-files/gwava.war --output gwava.war
 fi
 sudo cp *.war /var/lib/tomcat7/webapps/
 
