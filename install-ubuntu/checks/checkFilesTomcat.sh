@@ -11,7 +11,7 @@ echo "-------------------------------------"
 
 baseWebapps="/var/lib/tomcat7/webapps"
 baseLogs="/var/lib/tomcat7/logs"
-
+sudo chmod 755 /var/log/tomcat7
 returnValue=0
 
 filepath="$baseWebapps/transmart.war"
@@ -61,5 +61,5 @@ fi
 if [ 0 = $returnValue ] ; then
 	echo "All required tomcat files and folders are present"
 fi
-
+sudo chmod 750 /var/log/tomcat7
 exit $returnValue
