@@ -352,10 +352,10 @@ fi
 
 cd war-files
 if ! [ -e transmart.war ]; then
-	curl https://s3.amazonaws.com/kabs-files/transmart.war --output transmart.war
+	curl https://s3.amazonaws.com/kabs-files/transmartv125.war --output transmart.war
 fi
 if ! [ -e gwava.war ]; then
-	curl https://s3.amazonaws.com/kabs-files/gwava.war --output gwava.war
+	curl https://s3.amazonaws.com/kabs-files/gwavav125.war --output gwava.war
 fi
 sudo cp *.war /var/lib/tomcat7/webapps/
 
