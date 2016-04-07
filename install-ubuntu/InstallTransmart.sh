@@ -85,12 +85,8 @@ cd $INSTALL_BASE
 sudo -v
 sudo apt-get -q install -y curl
 sudo apt-get -q install -y unzip
-if ! [ -e transmart-data-release-1.2.4.zip ] ; then
-	curl https://codeload.github.com/tranSMART-Foundation/transmart-data/zip/release-1.2.5-Beta -o transmart-data-release-1.2.5-Beta.zip
-fi
 if ! [ -e transmart-data ] ; then
-	unzip transmart-data-release-1.2.5-Beta.zip
-	mv transmart-data-release-1.2.5-Beta transmart-data
+    git clone https://github.com/tranSMART-Foundation/transmart-data.git
 fi
 
 echo "Finished setting up the transmart-date folder at $(date)"
